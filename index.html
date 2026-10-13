@@ -1,0 +1,710 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rifa Jaleel | Astronomy Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="falling-stars"></div>
+    <div id="loader">
+    <div class="loader-content">
+
+        <div class="loader-orbit">
+            <div class="loader-planet"></div>
+        </div>
+
+        <h1>RIFA JALEEL</h1>
+
+        <p>LOADING MY UNIVERSE...</p>
+
+        <div class="loader-bar">
+            <div class="loader-progress"></div>
+        </div>
+
+        <span class="loader-percent">0%</span>
+
+    </div>
+</div>
+<script>
+(function () {
+
+    let number = 0;
+
+    const progress = document.querySelector(".loader-progress");
+    const percent = document.querySelector(".loader-percent");
+    const loader = document.getElementById("loader");
+
+    const timer = setInterval(function () {
+
+        number += 2;
+
+        progress.style.width = number + "%";
+        percent.textContent = number + "%";
+
+        if (number >= 100) {
+
+            clearInterval(timer);
+
+            setTimeout(function () {
+                loader.style.opacity = "0";
+
+                setTimeout(function () {
+                    loader.style.display = "none";
+                }, 1000);
+
+            }, 400);
+        }
+
+    }, 40);
+
+})();
+</script>
+
+    <!-- SPACE BACKGROUND -->
+    <div class="space-background">
+
+        <div class="stars stars-one"></div>
+        <div class="stars stars-two"></div>
+        <div class="stars stars-three"></div>
+
+        <div class="nebula nebula-one"></div>
+        <div class="nebula nebula-two"></div>
+
+        <div class="planet planet-one"></div>
+        <div class="planet planet-two"></div>
+
+    </div>
+
+
+    <!-- NAVIGATION -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                RIFA<span>.</span>
+            </div>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#internship">Internship</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+            <div class="menu-button">
+                ☰
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- HOME -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <div class="intro-line">
+                <span></span>
+                WELCOME TO MY UNIVERSE
+            </div>
+
+            <p class="hello">
+                HELLO, I'M
+            </p>
+            <div class="name-orbit">
+    <div class="orbit-ring"></div>
+    <div class="orbit-dot"></div>
+
+    <h1>
+        RIFA<span>JALEEL</span>
+    </h1>
+</div>
+            <div class="career-shooting-star">
+    <span class="career-star">✦</span>
+    <span class="career-trail"></span>
+    <span class="career-text">ASPIRING SOFTWARE ENGINEER</span>
+</div>
+
+            <h2>
+                <span id="typing"></span>
+            </h2>
+
+            <p class="hero-description">
+
+                Exploring the universe of technology, creativity and
+                innovation. I am a B.Tech Computer Science student
+                passionate about turning ideas into meaningful digital
+                experiences.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="space-button">
+                    EXPLORE MY WORK
+                </a>
+
+                <a href="#contact" class="outline-button">
+                    CONTACT ME
+                </a>
+
+            </div>
+
+
+            <div class="coordinates">
+
+                <div>
+                    <span>LOCATION</span>
+                    DIGITAL UNIVERSE
+                </div>
+
+                <div>
+                    <span>MISSION</span>
+                    CREATE & INNOVATE
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FLOATING IMAGE -->
+
+        <div class="hero-image-container">
+
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+
+            <div class="planet-glow"></div>
+
+            <div class="profile-image" id="profileImage">
+    <img src="rifa.jpg" alt="Profile">
+</div>
+
+            <div class="floating-star star-a">✦</div>
+            <div class="floating-star star-b">✧</div>
+            <div class="floating-star star-c">✦</div>
+
+            <div class="image-label">
+                <span>01</span>
+                RIFA JALEEL
+            </div>
+
+        </div>
+
+
+        <div class="scroll-indicator">
+
+            <span>SCROLL TO EXPLORE</span>
+
+            <div class="scroll-line"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section id="about" class="section">
+
+        <div class="section-heading">
+
+            <span>01 /</span>
+
+            <h2>
+                ABOUT <strong>ME</strong>
+            </h2>
+
+        </div>
+
+
+        <div class="about-grid">
+
+            <div class="about-text">
+
+                <p class="large-text">
+
+                    Somewhere between curiosity and code,
+                    I found my universe.
+
+                </p>
+
+                <p>
+
+                    I am <strong>Rifa Jaleel</strong>, a B.Tech Computer
+                    Science Engineering student with an interest in
+                    software development, web technologies and creative
+                    digital experiences.
+
+                </p>
+
+                <p>
+
+                    Just like exploring space, I enjoy exploring new
+                    technologies, experimenting with ideas and learning
+                    something new with every project.
+
+                </p>
+
+            </div>
+
+
+            <div class="about-card">
+
+                <div class="card-number">
+                    01
+                </div>
+
+                <h3>
+                    MY MISSION
+                </h3>
+
+                <p>
+                    Learn continuously, build creatively and use
+                    technology to solve real-world problems.
+                </p>
+
+                <div class="mission-line"></div>
+
+                <span>
+                    CURIOUS • CREATIVE • CONSISTENT
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+
+    <section id="skills" class="section">
+
+        <div class="section-heading">
+
+            <span>02 /</span>
+
+            <h2>
+                MY <strong>SKILLS</strong>
+            </h2>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+
+                <span class="skill-number">
+                    01
+                </span>
+
+                <div class="skill-icon">
+                    &lt;/&gt;
+                </div>
+
+                <h3>
+                    PROGRAMMING
+                </h3>
+
+                
+<p class="skill-technologies">
+    Java • C++ • Python
+</p>
+
+
+                <div class="skill-line">
+                    <span style="width:85%"></span>
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <span class="skill-number">
+                    02
+                </span>
+
+                <div class="skill-icon">
+                    ◇
+                </div>
+
+                <h3>
+                    WEB DEVELOPMENT
+                </h3>
+
+               
+<p class="skill-technologies">
+    HTML • CSS • JavaScript
+</p>
+
+
+                <div class="skill-line">
+                    <span style="width:82%"></span>
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <span class="skill-number">
+                    03
+                </span>
+
+                <div class="skill-icon">
+                    ◎
+                </div>
+
+                <h3>
+                    DATABASE
+                </h3>
+
+                 
+<p class="skill-technologies">
+    MySQL • Database Management
+</p>
+
+
+                <div class="skill-line">
+                    <span style="width:76%"></span>
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <span class="skill-number">
+                    04
+                </span>
+
+                <div class="skill-icon">
+                    ✦
+                </div>
+
+                <h3>
+                    DESIGN
+                </h3>
+
+                
+<p class="skill-technologies">
+    Canva • Figma • UI/UX
+</p>
+
+
+                <div class="skill-line">
+                    <span style="width:80%"></span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects-section">
+
+    
+<div class="section-heading">
+    <span>03 /</span>
+    <h2>MY <strong>WORK</strong></h2>
+</div>
+
+
+    <div class="projects-container">
+
+        <!-- HOSTEL MANAGEMENT -->
+        <div class="project-card">
+
+            <div class="project-icon">🏠</div>
+
+            <h3>Hostel Management System</h3>
+
+            <p>
+                A Java-based system designed to simplify hostel
+                administration by managing student details, room
+                allocation, room availability and fee records
+                efficiently.
+            </p>
+
+            <div class="project-tech">
+                <span>Java</span>
+                <span>MySQL</span>
+                <span>OOP</span>
+            </div>
+
+            
+<a href="./hostel management.html" class="project-btn">
+    View Project →
+</a>
+
+
+        </div>
+
+
+        <!-- WASTE MANAGEMENT -->
+        <div class="project-card">
+
+            <div class="project-icon">♻️</div>
+
+            <h3>Waste Management System</h3>
+
+            <p>
+                A smart waste management solution designed to improve
+                waste collection, segregation and monitoring while
+                encouraging responsible and sustainable waste disposal.
+            </p>
+
+            <div class="project-tech">
+                <span>Java</span>
+                <span>MySQL</span>
+                <span>Web</span>
+            </div>
+
+            
+<a href="./waste management.html" class="project-btn">
+    View Project →
+</a>
+
+
+        </div>
+
+    </div>
+
+</section>
+           
+
+
+                <
+
+
+    <!-- INTERNSHIP -->
+
+    <section id="internship" class="section">
+
+        <div class="section-heading">
+
+            <span>04 /</span>
+
+            <h2>
+                INTERNSHIP <strong>EXPERIENCE</strong>
+            </h2>
+
+        </div>
+
+
+        <div class="experience-card">
+
+            <div class="experience-number">
+                01
+            </div>
+
+
+            <div>
+
+                <span class="experience-label">
+                    INTERNSHIP
+                </span>
+
+                <h3>
+                    COGNILEARN
+                </h3>
+
+                <p>
+
+                    My internship experience at Cognilearn provided
+                    practical exposure to technology-based tasks,
+                    professional environments and real-world problem
+                    solving.
+
+                </p>
+
+
+                <div class="experience-tags">
+
+                    <span>Technology</span>
+                    <span>Learning</span>
+                    <span>Teamwork</span>
+                    <span>Problem Solving</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- HOBBIES -->
+
+    <section id="hobbies" class="section">
+
+        <div class="section-heading">
+
+            <span>05 /</span>
+
+            <h2>
+                BEYOND <strong>CODE</strong>
+            </h2>
+
+        </div>
+
+
+        <div class="hobbies-grid">
+
+            <div class="hobby">
+                <span>✦</span>
+                <h3>DESIGN</h3>
+                <p>Creative visual experiments</p>
+            </div>
+
+            <div class="hobby">
+                <span>⌘</span>
+                <h3>PROBLEM SOLVING</h3>
+                <p>Turning challenges into creative solutios</p>
+            </div>
+
+            <div class="hobby">
+                <span>◉</span>
+                <h3>MOVIES</h3>
+                <p>Stories and cinema</p>
+            </div>
+
+            <div class="hobby">
+                <span>♫</span>
+                <h3>MUSIC</h3>
+                <p>Music and creativity</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="section contact">
+
+        <div class="section-heading">
+
+            <span>06 /</span>
+
+            <h2>
+                LET'S <strong>CONNECT</strong>
+            </h2>
+
+        </div>
+
+
+        <div class="contact-container">
+
+            <div>
+
+                <p class="contact-big">
+                    LET'S CREATE
+                    SOMETHING
+                    <span>OUT OF THIS WORLD.</span>
+                </p>
+
+            </div>
+
+
+            <div class="contact-links">
+
+                
+<div class="contact-links">
+
+    <!-- EMAIL -->
+    <a href="mailto:rifajaleel068@gmail.com">
+        <span>✉ EMAIL</span>
+        rifajaleel068@gmail.com
+    </a>
+
+    <!-- GITHUB -->
+    <a href="https://github.com/rifajaleel18-spec"
+       target="_blank" rel="noopener noreferrer">
+        <span>⌘ GITHUB</span>
+        View my GitHub profile →
+    </a>
+
+    <!-- LINKEDIN -->
+    <a href="https://www.linkedin.com/in/rifa-jaleel-655444439"
+       target="_blank" rel="noopener noreferrer">
+        <span>✦ LINKEDIN</span>
+        Connect with me →
+    </a>
+
+</div>
+
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-logo">
+            RIFA JALEEL
+        </div>
+
+        <p>
+            Exploring the universe of technology.
+        </p>
+
+        <div class="footer-line"></div>
+
+        <small>
+            © 2026 Rifa Jaleel
+        </small>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
